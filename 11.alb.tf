@@ -8,3 +8,7 @@ resource "aws_lb" "sdkim_alb" {
     "Name" = "sdkim-alb"
   }
 }
+
+output "dns_name" {
+  value = aws_lb.sdkim_alb.dns_name
+}
