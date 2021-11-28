@@ -13,6 +13,6 @@ resource "aws_lb_target_group" "sdkim_albtg" {
     port                = "traffic-port"
     protocol            = "HTTP"
     timeout             = 2
-    unhealthy_threshold = 2
+    unhealthy_threshold = 3
   }
 }
