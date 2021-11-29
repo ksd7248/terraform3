@@ -1,5 +1,5 @@
 resource "aws_route_table_association" "sdkim_igas_puba" {
-  subnet_id      = aws_subnet.sdkim_puba.id
+  subnet_id      = aws_subnet.sdkim_pub[0].id
   route_table_id = aws_route_table.sdkim_rt.id
 }
 

@@ -15,3 +15,5 @@ resource "aws_autoscaling_group" "sdkim_atsg" {
   #placement_group           = aws_placement_group.sdkim_pg.id
   vpc_zone_identifier       = [aws_subnet.sdkim_puba.id, aws_subnet.sdkim_pubc.id]
 }
+
+
